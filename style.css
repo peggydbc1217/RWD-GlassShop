@@ -280,10 +280,9 @@ body {
 .header {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   background-position: center center;
   height: auto;
-  background-size: cover;
   padding: 296px 0;
 
   @media (max-width: 1296px) {
@@ -293,7 +292,8 @@ body {
 
   @media (max-width: 767px) {
     padding: 144px 13px;
-    /* background-size: 100% 100%; */
+    /* 
+    background-size: 100% 100%; */
   }
 }
 
