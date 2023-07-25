@@ -181,6 +181,10 @@ body {
   padding: 48px;
 }
 
+.mt-80 {
+  margin-top: 80px;
+}
+
 .mb-48 {
   margin-bottom: 48px;
 }
@@ -244,11 +248,11 @@ body {
   width: 7%;
 
   @media (max-width: 1296px) {
-    width: 13%;
+    width: 13.1%;
   }
 
   @media (max-width: 767px) {
-    width: 49.5%;
+    width: 49.4%;
 
     border: 1px solid #fff;
   }
@@ -267,6 +271,11 @@ body {
   }
 }
 
+.navigation__link:hover,
+.navigation__link:active {
+  color: #650300;
+}
+
 /* HEADER */
 .header {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
@@ -275,23 +284,22 @@ body {
   background-position: center center;
   height: auto;
   background-size: cover;
+  padding: 296px 0;
 
   @media (max-width: 1296px) {
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+    padding: 296px 32px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 144px 13px;
+    background-size: 100% 100%;
   }
 }
 
 .header__titlebox {
-  /* margin-top: 296px; */
-  /* margin-bottom: 296px; */
-  padding: 296px 312px;
+  margin: 0 auto;
   text-align: right;
-  @media (max-width: 1296px) {
-    padding: 296px 36px;
-  }
-  @media (max-width: 767px) {
-    padding: 296px 13px;
-  }
 }
 
 .header__title {
@@ -325,6 +333,15 @@ body {
   padding: 6px 12px;
 }
 
+.header__button:hover {
+  background-color: #650300;
+  transform: translateY(-2px);
+}
+
+.header__button:active {
+  transform: translateY(2px);
+}
+
 /*FEATURES*/
 
 .features {
@@ -347,6 +364,9 @@ body {
 
   @media (max-width: 1296px) {
     width: 48%;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
   }
 }
 
@@ -692,6 +712,11 @@ body {
   text-decoration: none;
 }
 
+.footer__link:hover,
+.footer__link:active {
+  color: #650300;
+}
+
 .footer__info {
   padding-bottom: 32px;
   @media (max-width: 767px) {
@@ -705,7 +730,7 @@ body {
 
 .footer__info__icon--phone {
   height: 40px;
-  margin-right: 20px;
+  margin-right: 12px;
   margin-left: 0;
   color: white;
   @media (max-width: 767px) {
@@ -715,7 +740,7 @@ body {
 }
 
 .footer__info__icon--email {
-  height: 32px;
+  height: 40px;
   margin-right: 20px;
   margin-left: 0;
   @media (max-width: 767px) {
@@ -787,6 +812,10 @@ body {
   @media (max-width: 767px) {
     text-align: left;
   }
+}
+.footer__lower__link:hover,
+.footer__lower__link:active {
+  color: #650300;
 }
 
 * {
